@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.highradius.partha.howlround.Register">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/top_bar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="Sign Up"
+                android:textColor="@color/White"
+                android:textSize="40dp"
+                tools:fontFamily="@font/roboto_light" />
+
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/top_bar">
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/grey1"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/et_user_email"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/grey1"
+        android:hint="Email"/>
+
+        <Spinner
+            android:id="@+id/et_user_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/grey1"
+            android:hint="Designation"/>
+
+
+    <Spinner
+        android:id="@+id/et_user_designation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/grey1"
+        android:hint="Designation"/>
+
+
+    <EditText
+        android:id="@+id/et_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/grey1"
+    android:hint="password"/>
+    <EditText
+        android:id="@+id/et_user_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/grey1"
+        android:hint="confirmpassword"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="REGISTER"
+     android:layout_marginTop="20dp"
+     android:background="#66BB6A"
+     android:textColor="@color/White"
+     android:id="@+id/btn_register"
+
+     />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
